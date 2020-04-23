@@ -1,0 +1,859 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    background-color: #63c6ae;
+    font-size: 1em;
+    font-weight: normal;
+    margin: auto;
+    max-width: 60%;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+h2 {
+    background-color: #242a2c;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 8px auto;
+    max-width: 55%;
+    padding: 1em 1em;
+    transition: all .5s;
+}
+
+h3 {
+    color: #838b92;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+abbr[data-original-title], abbr[title] {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #242a2c;
+    color: #454e51;
+    padding: 3.6em 1.9em 2em;
+    text-align: left;
+}
+
+footer p {
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
+    padding: 17px 0 0;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-top: 1.5em;
+    padding: 0;
+}
+
+footer li a {
+    color: #454e51;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    padding: .5em 0;
+    transition: all .5s;
+}
+
+footer li a:hover {
+    color: #63c6ae;
+    text-decoration: none;
+}
+
+.header-logo {
+    background-color: #63c6ae;
+    max-width: 40%;
+    padding: 1.4em 0;
+    transition: all .5s;
+}
+
+.logotipo {
+    max-width: 70%;
+}
+
+.fas.fa-bars {
+    color: #63c6ae;
+    font-size: 2em;
+    font-weight: 900;
+    position: absolute;
+    right: 1em;
+    top: .6em;
+}
+
+.top-nav-links {
+    background-color: #ecebe9;
+    display: none;
+    margin-top: 20px;
+    position: absolute;
+    text-align: center;
+    top: 3em;
+    width: 100%;
+}
+
+.top-nav-links a {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+.top-nav-links a:visited {
+    color: #586165;
+}
+
+.top-nav-links a:hover {
+    color: #63c6ae;
+}
+
+.top-nav-links a.active {
+    color: #63c6ae;
+}
+
+.header-background {
+    background: linear-gradient(45deg, white 50%, transparent 50%) calc(50% + 10px) bottom no-repeat,       /*O calculo é 50% que seria o centro da página, mais/menos metade da largura do meu background-size*/
+                linear-gradient(-45deg, white 50%, transparent 50%) calc(50% - 10px) bottom no-repeat, 
+                url(https://p.w3layouts.com/demos/infusion/web/images/banner.jpg);
+    background-size: 20px 20px, 20px 20px, cover;
+    min-height: 350px;
+    min-width: 200px;
+    transition: all .5s;
+}
+
+.text-header {
+    color: #FFF;
+    padding: 32px 5%;
+}
+
+.btn {
+    border-radius: 3px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.btn-header {
+    background-color: hsla(0, 0%, 19%, 0.21);
+    border: 3px solid hsla(0, 0%, 76%, 0.55);
+    display: inline-block;
+    font-size: 13px;
+    margin: 1.7em;
+    padding: .7em 1.3em;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.btn-header:hover {
+    background-color: hsla(165, 46%, 58%, 0.24);
+    color: #FFF;
+}
+
+.section-clients {
+    margin: 3em auto 1em;
+    width: 85%;
+}
+
+.section-clients article {
+    border: 9px solid transparent;
+    margin: .5em;
+    transition: border .5s;
+}
+
+.section-clients article:hover {
+    background-position: bottom;
+    border: 9px solid #63c6ae;
+}
+
+.section-clients article:hover .section-clients-texto{
+    color: #63c6ae;
+}
+
+.section-clients article:hover .section-clients-texto h3{
+    color: #63c6ae;
+}
+
+
+.section-clients article:hover .section-clients-pessoa {
+    background-position: bottom;
+}
+
+.section-clients-fundo img {
+    width: 100%;
+}
+
+.section-clients-pessoa {
+    bottom: 3.5em;
+    height: 88px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 88px;
+}
+
+.section-clients-pessoa.pessoa1 {
+    background: url(img/teamsprite_01.png);
+}
+
+.section-clients-pessoa.pessoa2 {
+    background: url(img/teamsprite_02.png);
+}
+
+.section-clients-pessoa.pessoa3 {
+    background: url(img/teamsprite_03.png);
+}
+
+.section-clients-pessoa.pessoa4 {
+    background: url(img/teamsprite_04.png);
+}
+
+.section-clients-texto {
+    border-left: 1px solid #dbe1e7;
+    color: #929da5;
+    margin-top: -100px;
+    padding: 3.5em 1em 1em;
+    text-align: left;
+}
+
+.section-clients-texto h3 {
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+.section-options {
+    background-color: #f8f8f8;
+    border-top: 1px solid #e8e8e8;
+    color: #808b92;
+    padding: 5em 1.5em 2em;
+    text-align: left;
+}
+
+.section-options h3 {
+    color: #7d8696;
+}
+
+.btn-section {
+    background-color: #63c6ae;
+    font-weight: 600;
+    margin: 1em 1em 2em 0;
+    padding: .8em 2.5em;
+}
+
+.btn-section:hover {
+    background-color: #455357;
+}
+
+.btn-section-2 {
+    background-color: #455357;
+    font-weight: 600;
+    margin: 1em 0 2em 0;
+    padding: .8em 2.5em;
+}
+
+.btn-section-2:hover {
+    background-color: #63c6ae;
+}
+
+.section-latest-articles {
+    background-color: #242a2c;
+    display: inline-block;
+    width: 100%;
+}
+
+.section-latest-articles h3 {
+    background-color: #63c6ae;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 1.4em 1em;
+    text-align: left;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+.section-latest-articles img {
+    border: 1px solid #000;
+    box-sizing: border-box;
+    float: left;
+    opacity: .2;
+    transition: all 0.5s;
+    width: 50%;
+}
+
+.section-latest-articles img:hover {
+    opacity: 1;
+}
+
+/* INÍCIO CAROUSEL IMAGENS */
+.section-products {
+    background-color: #242a2c;
+    clear: both;
+    padding: 15% 10%;
+}
+
+.carousel-inner {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.section-products .carousel-control-next, .section-products .carousel-control-prev {
+    opacity: 1;
+    width: 5%;
+}
+/* FIM CAROUSEL IMAGENS */
+
+/* INÍCIO CAROUSEL FRASES */
+@font-face {
+    font-family: fontAwesome;
+    src: url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
+}
+
+.icon-quotes-left {
+    content: "\f10d";
+}
+
+.fas .fa-quote-right {
+    content: "\f10e";
+}
+
+.section-quotes {
+    background-color: #63c6ae;
+    border-bottom: 10px solid #58b9a1;
+    color: #FFF;
+    padding: 3em;
+    transition: all .5;
+}
+
+.fas.fa-quote-left, .fas.fa-quote-right {
+    font-size: 12px;
+    font-style: italic;
+    padding: 0 1em;
+}
+
+.section-quotes q {
+    font-size: 16px;
+    font-style: italic;
+    transition: all .5;
+}
+
+.section-quotes p {
+    font-size: 14px;
+    padding: 1.5em 0;
+    transition: all .5;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    margin: 0 -1em;
+    opacity: .5;
+    transition: all .5;
+    width: 10%;
+}
+
+.carousel-indicators {
+    bottom: -20px;
+}
+/* FIM CAROUSEL FRASES */
+
+/* FOOTER */
+a.link-infusion {
+    color: #454e51;
+    font-size: 14px;
+    font-weight: bold;
+    height: 100%;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+a.link-infusion:hover {
+    color: #63c6ae;
+    text-decoration: none;
+}
+
+a.link-copyright {
+    color: #63c6ae;
+    transition: all .5s;
+}
+
+a.link-copyright:hover {
+    color: #454e51;
+    text-decoration: none;
+}
+
+p.copyright {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 320px) {
+
+    h1 {
+        padding: 22px 0;
+    }
+
+    .text-header {
+        padding: 16% 5%;
+    }
+
+    .section-clients {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3em 1em 1em;
+        width: 98%;
+    }
+
+    .section-clients article {
+        flex-basis: 40%;
+        flex-grow: 1;
+    }
+
+    .section-latest-articles img {
+        width: 33.3%;
+    }
+}
+
+
+@media screen and (min-width: 480px) {
+
+    .header-logo {
+        width: 35%;
+    }
+
+    .section-latest-articles img {
+        width: 25%;
+    }
+
+    /* INÍCIO CAROUSEL FRASES */
+    .section-quotes .w-100 {
+        margin: 0 auto;
+        width: 90%!important;
+    }
+
+    .fas.fa-quote-left, .fas.fa-quote-right {
+        font-size: 14px;
+    }
+    
+    .section-quotes q {
+        font-size: 18px;
+    }
+    
+    .section-quotes p {
+        font-size: 16px;
+    }
+    /* FIM CAROUSEL FRASES */
+}
+
+
+@media screen and (min-width: 642px) {
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .header-logo {
+        width: 30%;
+    }
+
+    /* INÍCIO CAROUSEL FRASES */
+    .section-quotes {
+        padding: 4em 3em;
+    }
+    /* FIM CAROUSEL FRASES */
+
+    .footer-flex {
+        display: flex;
+    }
+
+    a.link-infusion {
+        font-size: 20px;
+    }
+
+    .footer-flex p {
+        padding: 0 1em;
+        width: 37%;
+    }
+
+    footer ul {
+        margin: 0;
+    }
+
+    p.copyright {
+        padding-top: 50px;
+    }
+}
+
+
+@media screen and (min-width: 770px) {
+
+    h1 {
+        font-size: 24px;
+        padding: 18px 0;
+    }
+
+    h2 {
+        font-size: 14px;
+        padding: 17px 0;
+        width: 50%;
+    }
+
+    .header-logo {
+        padding: 1.4em 0 1.6em;
+        width: 25%;
+    }
+
+    .logotipo {
+        padding: 3% 0 0;
+        transition: all .5s;
+    }
+    
+    .fas.fa-bars {
+        visibility: hidden;
+    }
+
+    .top-nav-links {
+        background-color: transparent;
+        display: block;
+        font-size: 14px;
+        margin-left: 25%;
+        margin-top: 0;
+        max-width: 75%;
+        padding: 2em 0 0 3em;
+        position: absolute;
+        text-align: left;
+        top: 0;
+    }
+
+    .top-nav-links a {
+        color: #586165;
+        display: inline-block;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 0 1em;
+        transition: all .5s;
+    }
+
+    .top-nav-links a:hover {
+        color: #63c6ae;
+    }
+
+    .header-background {
+        min-height: 510px;
+    }
+
+    .text-header {
+        display: inline-block;
+        margin-top: 16%;
+        padding: 0;
+        width: 86%;
+    }
+
+    .btn-header {
+        font-size: 14px;
+        margin: 2.5em;
+        padding: .9em 1.7em;
+    }
+
+    .section-clients article {
+        flex-basis: 29%;
+    }
+
+    .section-clients article:last-child {
+        flex-grow: 0;
+    }
+
+    .section-latest-articles h3 {
+        font-size: 20px;
+        padding: 1.5em 5%;
+    }
+
+    /* INÍCIO CAROUSEL FRASES */
+   .fas.fa-quote-left, .fas.fa-quote-right {
+        font-size: 18px;
+    }
+    
+    .section-quotes q {
+        font-size: 22px;
+    }
+    
+    .section-quotes p {
+        font-size: 18px;
+    }
+    /* FIM CAROUSEL FRASES */
+}
+
+
+@media screen and (min-width: 992px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .logotipo {
+        padding: 0;
+    }
+
+    .header-background {
+        background: linear-gradient(45deg, white 50%, transparent 50%) calc(50% + 20px) bottom no-repeat, 
+        linear-gradient(-45deg, white 50%, transparent 50%) calc(50% - 20px) bottom no-repeat, 
+        url(https://p.w3layouts.com/demos/infusion/web/images/banner.jpg);
+        background-size: 40px 40px, 40px 40px, cover;
+        min-height: 570px;
+    }
+
+    .text-header {
+        margin-top: 13%;
+    }
+
+    .btn-header {
+        font-size: 18px;
+    }
+
+    .section-clients article {
+        flex-basis: 21%;
+    }
+
+    .section-clients article:last-child {
+        flex-grow: 1;
+    }
+
+    .section-latest-articles h3 {
+        padding: 1.5em 8%;
+    }
+
+    /* INÍCIO CAROUSEL IMAGENS */
+    .section-products {
+        background-color: #242a2c;
+        clear: both;
+        padding: 149px 10%;
+    }  
+
+    .carousel-inner {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    /* FIM CAROUSEL IMAGENS */
+
+    /* INÍCIO CAROUSEL FRASES */
+    .fas.fa-quote-left, .fas.fa-quote-right {
+        font-size: 18px;
+    }
+    
+    .section-quotes q {
+        font-size: 24px;
+    }
+    /* FIM CAROUSEL FRASES */
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .top-nav-links {
+        font-size: 16px;
+    }
+
+    .text-header {
+        margin-top: 12%;
+        width: 70%;
+    }
+
+    .section-clients {
+        margin: 3em auto 1em;
+        width: 1170px;
+    }
+
+    .section-options {
+        padding: 0;
+    }
+
+    .section-options h3 {
+        font-size: 22px;
+        padding-bottom: 1em;
+    }
+
+    .section-options-text {
+        display: flex;
+        margin: 0 auto;
+        width: 1200px;
+    }
+
+    .section-options article {
+        padding: 5em 1.5em 2em;
+    }
+
+    .section-latest-articles h3 {
+        padding: 1.5em 10%;
+    }
+
+    .section-latest-articles img {
+        width: 16.66%;
+    }
+
+    /* INÍCIO CAROUSEL IMAGENS */
+    .section-products .carousel {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+    /* FIM CAROUSEL IMAGENS */
+
+    /* INÍCIO CAROUSEL FRASES */
+     .fas.fa-quote-left, .fas.fa-quote-right {
+        font-size: 20px;
+    }
+    
+    .section-quotes q {
+        font-size: 26px;
+    }
+    /* FIM CAROUSEL FRASES */
+
+    /* INÍCIO FOOTER */
+    .footer-flex {
+        margin: 45px auto;
+        padding: 0;
+        width: 1100px;
+    }
+
+    a.link-infusion {
+        font-size: 22px;
+        width: 16%;
+    }
+
+    .footer-flex p {
+        font-size: 14px;
+        width: 41%;
+    }
+
+    .footer-flex p:nth-child(3) {
+        width: 25%;
+    }
+
+    footer ul {
+        margin: 0 2em;
+        width: 100%;
+    }
+
+    p.copyright {
+        font-size: 14px;
+        padding-top: 50px;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+
+    h1 {
+        font-size: 30px;
+        max-width: 57%;
+        padding: 30px 0;
+    }
+
+    h2 {
+        font-size: 17px;
+        padding: 30px 0;
+        width: 47%;
+    }
+
+    .logotipo {
+        padding: 2% 0 2% 20%;
+    }
+
+    .header-background {
+        min-height: 735px;
+    }
+
+    .text-header {
+        margin-top: 230px;
+        width: 75%;
+    }
+
+    .btn {
+        font-weight: 600;
+    }
+
+    .section-clients-texto h3 {
+        font-size: 20px;
+    }
+
+    .section-latest-articles h3 {
+        padding: 1.5em 13%;
+    }
+
+    /* INÍCIO CAROUSEL FRASES */
+    .section-quotes {
+        padding: 4.5em 3em;
+    }
+
+    .section-quotes .carousel-control-next, .section-quotes .carousel-control-prev {
+        margin: 0 3em;
+    }
+
+    .section-quotes .w-100 {
+        width: 90%!important;
+    }
+
+    .fas.fa-quote-left, .fas.fa-quote-right {
+        font-size: 22px;
+    }
+    
+    .section-quotes q {
+        font-size: 28px;
+    }
+    
+    .section-quotes p {
+        font-size: 20px;
+    }
+    /* FIM CAROUSEL FRASES */
+}
+
+
+@media screen and (min-width: 1650px) {
+    .text-header {
+        width: 70%;
+    }
+
+    .section-latest-articles h3 {
+        font-size: 24px;
+        padding: 1.3em 15%;
+    }
+
+    /* INÍCIO CAROUSEL FRASES */
+    .section-quotes .carousel-control-next, .section-quotes .carousel-control-prev {
+        margin: 0 6em;
+    }
+
+    .section-quotes .w-100 {
+        width: 85%!important;
+    }
+    /* FIM CAROUSEL FRASES */
+}
+
+
+
+
+
+
+
+
+
+
